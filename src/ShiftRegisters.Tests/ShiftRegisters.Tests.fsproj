@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LFSR\LFSR.fsproj" />
+    <ProjectReference Include="..\ShiftRegisters\ShiftRegisters.fsproj" />
   </ItemGroup>
 
 </Project>

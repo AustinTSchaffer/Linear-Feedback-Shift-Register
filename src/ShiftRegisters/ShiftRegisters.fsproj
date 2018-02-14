@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <Compile Include="ShiftRegister.fs" />
+    <Compile Include="LinearFeedbackShiftRegister.fs" />
+    <Compile Include="ExclusiveOrLFSR.fs" />
   </ItemGroup>
 
   <ItemGroup>
