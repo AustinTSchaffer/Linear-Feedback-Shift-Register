@@ -1,8 +1,9 @@
 namespace ShiftRegisters
 
+open System
+
 /// Defines a shift register with an initial state and a constant number of 
 /// bits.
-open System
 type ShiftRegister (initialState:bigint, length:int) =
     
     do 
@@ -72,5 +73,12 @@ type ShiftRegister (initialState:bigint, length:int) =
             |> (&&&) (1uy <<< (index % 8))
             |> (<>) 0uy
 
+
+    override this.ToString () =
+        sprintf "0x%s" (
+            this.State.ToByteArray()
+            |> Array.rev
+            |> Array.map (sprintf "%02X")
+            |> String.concat "")
 
     //#endregion
