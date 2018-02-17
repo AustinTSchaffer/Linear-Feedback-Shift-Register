@@ -19,9 +19,8 @@ type ExclusiveOrLFSR (initialState:bigint, taps:int list) =
     new(init:int, taps) = ExclusiveOrLFSR(bigint init, taps)
 
     /// Constructor that only takes the list of taps, and initializes
-    /// the shift register with a 1 in the left most (most significant)
-    /// bit.
-    new(taps:int list) = ExclusiveOrLFSR((List.max >> pown 2) taps, taps)
+    /// the shift register with a 1.
+    new(taps:int list) = ExclusiveOrLFSR(1, taps)
 
     /// List of "taps", which are the Shift Register bits that
     /// are XORed together in order to produce the next input
