@@ -1,4 +1,4 @@
-namespace ShiftRegisters.ConcreteImplementations
+namespace ShiftRegisters.LFSRs
 
 open ShiftRegisters
 
@@ -8,6 +8,7 @@ open ShiftRegisters
 /// ascends in the direction that the shift register shifts.
 /// The higher the tap number, the lower the significance of
 /// that bit.
+/// TODO: Make this better.
 type ExclusiveNorLFSR (initialState:bigint, taps:int list) =
     inherit LinearFeedbackShiftRegister (initialState, List.max taps)        
 

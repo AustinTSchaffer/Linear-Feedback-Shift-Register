@@ -7,8 +7,9 @@
   <ItemGroup>
     <Compile Include="ShiftRegister.fs" />
     <Compile Include="LinearFeedbackShiftRegister.fs" />
-    <Compile Include="ConcreteImplementations/ExclusiveOrLFSR.fs" />
-    <Compile Include="ConcreteImplementations/ExclusiveNorLFSR.fs" />
+    <Compile Include="LFSRs/ExclusiveOrLFSR.fs" />
+    <Compile Include="LFSRs/ExclusiveNorLFSR.fs" />
+    <Compile Include="Scripts.fsx" />
   </ItemGroup>
 
   <ItemGroup>
